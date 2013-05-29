@@ -25,11 +25,10 @@ public class MyDemosActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		Intent intent = getIntent();
 		String path = intent.getStringExtra("com.oasis.yxc.android.demos.Path");
-
 		if (path == null) {
 			path = "";
 		}
-		
+
 		Log.e("yxc", "getData(path) = " + getData(path));
 		setListAdapter(new SimpleAdapter(this, getData(path),
 				android.R.layout.simple_list_item_1, new String[] { "title" },
@@ -123,12 +122,12 @@ public class MyDemosActivity extends ListActivity {
 		result.putExtra("com.oasis.yxc.android.demos.Path", path);
 		return result;
 	}
-	
-    @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-        Map map = (Map) l.getItemAtPosition(position);
 
-        Intent intent = (Intent) map.get("intent");
-        startActivity(intent);
-    }
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		Map map = (Map) l.getItemAtPosition(position);
+
+		Intent intent = (Intent) map.get("intent");
+		startActivity(intent);
+	}
 }

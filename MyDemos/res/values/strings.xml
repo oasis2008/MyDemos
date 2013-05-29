@@ -4,5 +4,11 @@
     <string name="hello">Hello World, MyDemosActivity!</string>
     <string name="app_name">MyDemos</string>
     <string name="groupinglistview">实用代码/分组列表</string>
+    <string name="tabshow">实用代码/TAB显示</string>
+    <string name="slipbtn">实用代码/滑动按钮</string>
+    <string name="pullrefresh">实用代码/下拉刷新</string>
+    <string name="intentbinaryflag">实用代码/Intent传递二进制对象</string>
+    <string name="serializable">serializable</string>
+    <string name="parcelable">parcelable</string>
 
 </resources>
